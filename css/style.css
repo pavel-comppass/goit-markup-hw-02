@@ -9,13 +9,15 @@
 
 .link {
   text-decoration: none;
+  color: var(--body-color);
 }
-
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
-
+.link.current {
+  color: var(--accent-color);
+}
 .list {
   list-style: none;
 }
@@ -35,19 +37,19 @@
 .logo-second-part-bottom {
   color: rgb(255, 255, 255);
 }
+
 .body {
   font-family: var(--content-font);
   color: var(--body-color);
 }
 .header {
-  width: 1600px;
-  height: 80px;
   display: flex;
   justify-content: space-between;
 }
 .nav {
   display: flex;
 }
+
 .menu {
   display: flex;
   font-weight: 500;
@@ -55,33 +57,30 @@
   line-height: 1.17;
 }
 .header-contacts {
-  display: flex;
-  color: rgb(117, 117, 117);
+  color: var(--description-color);
 }
 .hero-section {
-  justify-content: center;
-  width: 1600px;
-  height: 600px;
   background-color: var(--background-color);
 }
 .hero {
   color: #fff;
+  font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
 }
 .secondary {
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
 }
 .unit {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
 }
 .teammate {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 18;
+  line-height: 1.18;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -89,6 +88,7 @@
   background-color: rgb(24, 140, 232);
 }
 .modal-button {
+  font-family: inherit;
   color: rgb(255, 255, 255);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -100,24 +100,21 @@
   background-color: var(--accent-color);
 }
 .button {
+  font-family: inherit;
   background-color: rgb(245, 244, 250);
   cursor: pointer;
   font-weight: 500;
 }
 .description {
-  display: inline;
   color: var(--description-color);
-  font-size: 16;
-  line-height: 1, 17;
+  font-size: 16px;
+  line-height: 1.17;
 }
 .footer {
   background-color: var(--background-color);
 }
 .address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1, 85;
 }
 .adress-link {
   color: #fff;
@@ -125,7 +122,3 @@
 .contact-link {
   color: rgba(255, 255, 255, 60%);
 }
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; 
-*/
